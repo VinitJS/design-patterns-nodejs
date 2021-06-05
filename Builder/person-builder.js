@@ -17,6 +17,13 @@ class PersonBuilder {
     }
 
     hasDiseases() {
+        /*
+        * 4 Ways to get arguments in array:
+        * var args = Array.prototype.slice.call(arguments);
+        * var args = [].slice.call(arguments);
+        * let args = Array.from(arguments);
+        * let args = [...arguments];
+        */
         this.diseases = Array.from(arguments);
         return this;
     }
