@@ -1,6 +1,7 @@
 const { writeFile, existsSync, readFileSync, unlink } = require("fs");
+const path = require("path");
 
-const fileLocation = "./Adapter/localstorage.json"
+const fileLocation = path.join(__dirname, "localstorage.json")
 
 class LocalStorage {
 
@@ -29,7 +30,7 @@ class LocalStorage {
             JSON.stringify(this._items),
             error => {
                 console.log(error);
-            })
+            });
     }
 
     clear() {
