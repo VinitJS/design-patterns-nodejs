@@ -1,4 +1,4 @@
-// node builder/index.js
+// node Builder/index.js
 
 const PersonBuilder = require("./person-builder");
 
