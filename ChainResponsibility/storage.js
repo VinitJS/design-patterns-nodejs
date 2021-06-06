@@ -1,3 +1,5 @@
+// node ChainResponsibility/index.js
+
 class Storage {
     constructor(name, inventory = [], deliveryTime = 0) {
         this.name = name;
@@ -21,7 +23,7 @@ class Storage {
         } else if(this.next) {
             return this.next.find(itemName);
         }
-        console.log("Not found!")
+        console.log
     }
 }
 
