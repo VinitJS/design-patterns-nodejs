@@ -5,17 +5,17 @@ class Store {
         this._discount = 0;
     }
 
-    subscribe(shopper) {
-        this._subscribers.push(shopper);
+    subscribe(observer) {
+        this._subscribers.push(observer);
     }
 
-    announce() {
+    announceSale() {
         this._subscribers.forEach(s => s.notify(this._name, this._discount));
     }
 
     setSale(discount) {
         this._discount = discount;
-        this.announce();
+        this.announceSale();
     }
 }
 
