@@ -1,0 +1,14 @@
+{
+    "floor": [
+        { "name": "sunglasses", "qty": 5 }
+    ],
+    "backroom": [
+        { "name": "watch", "qty": 10 }
+    ],
+    "localstore": [
+        { "name": "gear", "qty": 15 }
+    ],
+    "warehouse": [
+        { "name": "cycle", "qty": 20 }
+    ]
+}
