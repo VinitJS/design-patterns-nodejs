@@ -24,11 +24,10 @@ class CreateCommand {
 
     undo() {
         console.log("Removing file...");
-        unlink(this._filePath, (err, res) => {
+        unlink(this._filePath, err => {
             if(err) {
                 return console.log("Error deleting file.");
             }
-            console.log(res);
         });
     }
 }
